@@ -1,14 +1,17 @@
-#include "Exercise.h"
 #include <iostream>
+#include "ShoppingCart.h"
+#include "Client.h"
+#include "Goods.h"
 
 int main()
 {
-	auto client1 = __client(MemberLevel::GOLD_CARD); 
-	client1->addGoods(Items::NESTLE_COFFEE, 4);
-	client1->addGoods(Items::COFFEE_CUP);
-	client1->addGoods(Items::FRUIT_TEA, 2);
+	auto cart = ShoppingCart(GOLD_CARD_MEMBER);
+	cart.addGoods(NESTLE_COFFEE, 9);
+	cart.addGoods(COFFEE_CUP);
+	cart.addGoods(FRUIT_TEA, 5);
+	cart.addGoods(CHOCOLATE, 10);
 
-	std::cout << client1->totalPrice() << std::endl;
+	std::cout << cart.pay() << std::endl;
 
 	return 0;
 }
