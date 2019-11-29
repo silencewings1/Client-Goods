@@ -30,6 +30,7 @@ double ShoppingCart::pay()
         auto num = item.second;
         total_payment += num * price;
     }
-
+    
+    client.addPoints(total_payment);
     return total_payment;
 }

@@ -2,6 +2,7 @@
 
 Client::Client(double discount)
     : discount(discount)
+    , points(0.0)
 {
 }
 
@@ -26,4 +27,14 @@ const Client& Client::getNotMember()
 double Client::getDiscount() const
 {
     return discount;
+}
+
+void Client::addPoints(double payment) const
+{
+    points += payment;
+}
+
+double Client::getPoints() const
+{
+    return points;
 }

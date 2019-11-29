@@ -17,5 +17,5 @@ in `build` dir, run `./test/Exercise_test`
 | v2 | extract shopping cart as a Class |
 |    | reserve client in shopping cart as reference |
 |    | Slug |
-
+| v3 | add points for client |
 
