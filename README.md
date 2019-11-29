@@ -12,10 +12,10 @@ make all
 in `build` dir, run `./test/Exercise_test`
 
 ## revision
-|      |      | 
+| version | log | 
 | ---- | ---- |
-| v1 | shopping cart to class |
-|    | client dependency injection |
-|    | goods objects in shopping cart |
-|    | cion pattern |
-|
+| v2 | extract shopping cart as a Class |
+|    | reserve client in shopping cart as reference |
+|    | Slug |
+
+
